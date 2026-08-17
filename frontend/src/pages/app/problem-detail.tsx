@@ -113,7 +113,7 @@ function MobileView({
   templates: ProblemTemplate[];
   hints: ProblemHints[];
 }) {
-  const tabs = ["Problem", "Editor", "Test Cases", "Output"] as const;
+  const tabs = ["Problem", "Editor"] as const;
 
   const [active, setActive] = useState<(typeof tabs)[number]>("Problem");
 
